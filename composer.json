@@ -1,7 +1,7 @@
 {
 	"name": "shineunited/conductor-gitignore-addon",
 	"type": "composer-plugin",
-	"version": "1.0",
+	"license": "MIT",
 	"require": {
 		"php": ">=8.0",
 		"composer-plugin-api": "^2.0",
@@ -24,8 +24,8 @@
 	},
 	"config": {
 		"allow-plugins": {
-			"dealerdirect/phpcodesniffer-composer-installer": true,
-			"shineunited/conductor": true
+			"shineunited/conductor": true,
+			"dealerdirect/phpcodesniffer-composer-installer": true
 		}
 	},
 	"scripts": {
