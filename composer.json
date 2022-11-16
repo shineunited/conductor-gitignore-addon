@@ -24,7 +24,7 @@
 	},
 	"config": {
 		"allow-plugins": {
-			"shineunited/conductor": true,
+			"shineunited/conductor": false,
 			"dealerdirect/phpcodesniffer-composer-installer": true
 		}
 	},
