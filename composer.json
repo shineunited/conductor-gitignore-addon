@@ -1,0 +1,36 @@
+{
+	"name": "shineunited/conductor-gitignore-addon",
+	"type": "composer-plugin",
+	"version": "1.0",
+	"require": {
+		"php": ">=8.0",
+		"composer-plugin-api": "^2.0",
+		"shineunited/conductor": "*"
+	},
+	"require-dev": {
+		"composer/composer": "^2.4",
+		"squizlabs/php_codesniffer": "^3.0",
+		"phpcompatibility/php-compatibility": "^9.3",
+		"shineunited/coding-standard": "^1.0",
+		"phpstan/phpstan": "^1.9"
+	},
+	"autoload": {
+		"psr-4": {
+			"ShineUnited\\Conductor\\Addon\\Gitignore\\": "src/"
+		}
+	},
+	"extra": {
+		"class": "ShineUnited\\Conductor\\Addon\\Gitignore\\Plugin"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"shineunited/conductor": true
+		}
+	},
+	"scripts": {
+		"phpcs": "phpcs -ps --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1",
+		"phpcbf": "phpcbf -p --runtime-set ignore_errors_on_exit 1 --runtime-set ignore_warnings_on_exit 1",
+		"phpstan": "phpstan analyse"
+	}
+}
