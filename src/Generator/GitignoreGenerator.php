@@ -39,7 +39,7 @@ class GitignoreGenerator implements GeneratorInterface {
 	 * {@inheritDoc}
 	 */
 	public function handlesBlueprint(BlueprintInterface $blueprint): bool {
-		if($blueprint instanceof GitignoreBlueprintInterface) {
+		if ($blueprint instanceof GitignoreBlueprintInterface) {
 			return true;
 		}
 
@@ -56,7 +56,7 @@ class GitignoreGenerator implements GeneratorInterface {
 			throw new \Exception('Invalid ' . GitignoreBlueprint::class);
 		}
 
-		if($config['gitignore.disable']) {
+		if ($config['gitignore.disable']) {
 			return $file->getContents();
 		}
 
