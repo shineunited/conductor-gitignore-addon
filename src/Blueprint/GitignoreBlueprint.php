@@ -13,13 +13,12 @@ declare(strict_types=1);
 
 namespace ShineUnited\Conductor\Addon\Gitignore\Blueprint;
 
-use ShineUnited\Conductor\Addon\Gitignore\Generator\GitignoreGenerator;
 use ShineUnited\Conductor\Filesystem\Blueprint\BaseBlueprint;
 
 /**
  * Gitignore Blueprint
  */
-class GitignoreBlueprint extends BaseBlueprint {
+class GitignoreBlueprint extends BaseBlueprint implements GitignoreBlueprintInterface {
 
 	/**
 	 * Initializes blueprint.
@@ -27,6 +26,6 @@ class GitignoreBlueprint extends BaseBlueprint {
 	 * @param string|callable $path Output path.
 	 */
 	public function __construct(string|callable $path) {
-		parent::__construct(GitignoreGenerator::TYPE, $path, 'ask', 'ask');
+		parent::__construct($path, 'ask', 'ask');
 	}
 }
