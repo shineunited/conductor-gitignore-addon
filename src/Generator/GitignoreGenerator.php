@@ -56,10 +56,6 @@ class GitignoreGenerator implements GeneratorInterface {
 			throw new \Exception('Invalid ' . GitignoreBlueprint::class);
 		}
 
-		if ($config['gitignore.disable']) {
-			return $file->getContents();
-		}
-
 		$rulesets = [];
 
 		$rulesets['global'] = new Ruleset('Global');
