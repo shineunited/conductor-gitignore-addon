@@ -2,6 +2,11 @@
 	"name": "shineunited/conductor-gitignore-addon",
 	"type": "composer-plugin",
 	"license": "MIT",
+	"description": "Addon for Conductor to support managing project gitignore file.",
+	"keywords": [
+		"conductor",
+		"gitignore"
+	],
 	"require": {
 		"php": ">=8.0",
 		"composer-plugin-api": "^2.0",
