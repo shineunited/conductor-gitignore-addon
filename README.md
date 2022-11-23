@@ -57,7 +57,7 @@ The gitignore addon uses the Conductor configuration framework to parse paramete
 ## Usage
 
 ### GitignoreProvider Capability
-In addition to the automically added gitignore rules based on the project's config, a composer plugin can explicitly add various rules via the GitignoreProvider capability.
+In addition to the automatically added gitignore rules based on the project's config, a composer plugin can explicitly add various rules via the GitignoreProvider capability.
 
 #### Example Plugin
 The plugin must implement Capable and provide the GitignoreProvider capability.
