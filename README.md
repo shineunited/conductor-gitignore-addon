@@ -3,9 +3,9 @@
 [![License](https://img.shields.io/packagist/l/shineunited/conductor-gitignore-addon)](https://github.com/shineunited/conductor-gitignore-addon/blob/main/LICENSE)
 [![Latest Version](https://img.shields.io/packagist/v/shineunited/conductor-gitignore-addon?label=latest)](https://packagist.org/packages/shineunited/conductor-gitignore-addon/)
 [![PHP Version](https://img.shields.io/packagist/dependency-v/shineunited/conductor-gitignore-addon/php?label=php)](https://www.php.net/releases/index.php)
-[![Main Status](https://img.shields.io/github/workflow/status/shineunited/conductor-gitignore-addon/Build/main?label=main)](https://github.com/shineunited/conductor-gitignore-addon/actions/workflows/build.yml?query=branch%3Amain)
-[![Release Status](https://img.shields.io/github/workflow/status/shineunited/conductor-gitignore-addon/Build/release?label=release)](https://github.com/shineunited/conductor-gitignore-addon/actions/workflows/build.yml?query=branch%3Arelease)
-[![Develop Status](https://img.shields.io/github/workflow/status/shineunited/conductor-gitignore-addon/Build/develop?label=develop)](https://github.com/shineunited/conductor-gitignore-addon/actions/workflows/build.yml?query=branch%3Adevelop)
+[![Main Status](https://img.shields.io/github/actions/workflow/status/shineunited/conductor-gitignore-addon/build.yml?branch=main&label=main)](https://github.com/shineunited/conductor-gitignore-addon/actions/workflows/build.yml?query=branch%3Amain)
+[![Release Status](https://img.shields.io/github/actions/workflow/status/shineunited/conductor-gitignore-addon/build.yml?branch=release&label=release)](https://github.com/shineunited/conductor-gitignore-addon/actions/workflows/build.yml?query=branch%3Arelease)
+[![Develop Status](https://img.shields.io/github/actions/workflow/status/shineunited/conductor-gitignore-addon/build.yml?branch=develop&label=develop)](https://github.com/shineunited/conductor-gitignore-addon/actions/workflows/build.yml?query=branch%3Adevelop)
 
 ## Description
 In conjunction with Conductor, this addon will automatically modify the project's .gitignore file to exclude paths installed with the Conductor or specified explicitly by other packages.
