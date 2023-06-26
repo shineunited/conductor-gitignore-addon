@@ -80,6 +80,10 @@ class GitignoreGenerator implements GeneratorInterface {
 				foreach ($localRepository->getPackages() as $package) {
 					$installPath = $im->getInstallPath($package);
 
+					if (is_null($installPath)) {
+						continue;
+					}
+
 					if (strlen(trim($installPath)) == 0) {
 						continue;
 					}
